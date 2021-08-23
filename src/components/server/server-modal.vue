@@ -22,11 +22,11 @@
                                     <table style="width: 100%;">
                                         <tbody>
                                             <tr>
-                                                <td>Players</td>
+                                                <td>玩家数</td>
                                                 <td><b>{{ server.players }}</b> / {{ server.maxPlayers }}</td>
                                             </tr>
                                             <tr>
-                                                <td>Language</td>
+                                                <td>语言</td>
                                                 <td>{{ this.getLanguage(server.language) }}</td>
                                             </tr>
                                             <tr v-if="!server.useCdn">
@@ -34,27 +34,27 @@
                                                 <td>{{ server.host }}</td>
                                             </tr>
                                             <tr v-if="!server.useCdn">
-                                                <td>Port</td>
+                                                <td>端口</td>
                                                 <td>{{ server.port }}</td>
                                             </tr>
                                             <tr v-if="server.useCdn">
-                                                <td>Host</td>
+                                                <td>CND域名</td>
                                                 <td>{{ server.cdnUrl }}</td>
                                             </tr>
                                             <tr>
-                                                <td>Gamemode</td>
+                                                <td>模式</td>
                                                 <td>{{ server.gameMode }}</td>
                                             </tr>
                                             <tr>
-                                                <td>Website</td>
+                                                <td>官网</td>
                                                 <td>{{ server.website }}</td>
                                             </tr>
                                             <tr>
-                                                <td>Description</td>
+                                                <td>简介</td>
                                                 <td>{{ server.description }}</td>
                                             </tr>
                                             <tr>
-                                                <td>Tags</td>
+                                                <td>标签</td>
                                                 <td class="serverTags">
                                                     <span v-for="tag in server.tags" :key="tag">
                                                         {{ tag }}
@@ -65,35 +65,35 @@
                                     </table>
                                 </div>
                                 <div class="charts">
-                                    <h2>Players Stat</h2>
+                                    <h2>玩家在线数量统计</h2>
                                     <div class="loading-chart">
                                         <ServerChart class="chart" v-show="playerData !== null" ref="chartRef" :data="playerStat" :height="180"></ServerChart>
-                                        <i v-if="playerData === null">Loading...</i>
+                                        <i v-if="playerData === null">载入中...</i>
                                     </div>
                                     <div class="filter">
                                         <div class="radio-group">
                                             <input v-model="period" id="1day" type="radio" name="time" value="1d" checked />
-                                            <label for="1day">1 day</label>
+                                            <label for="1day">1 天</label>
 
                                             <input v-model="period" id="1week" type="radio" name="time" value="7d" />
-                                            <label for="1week">1 week</label>
+                                            <label for="1week">1 周</label>
 
                                             <input v-model="period" id="1month" type="radio" name="time" value="31d" />
-                                            <label for="1month">1 month</label>
+                                            <label for="1month">1 月</label>
                                         </div>
                                         <div class="radio-group">
                                             <input v-model="type" id="avg" type="radio" name="type" value="avg" checked />
-                                            <label for="avg">Average</label>
+                                            <label for="avg">平均</label>
 
                                             <input v-model="type" id="max" type="radio" name="type" value="max" />
-                                            <label for="max">Max</label>
+                                            <label for="max">最大</label>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="connect" colspan="2">
-                                <a v-if="server.useCdn" :href="'altv://connect/' + server.cdnUrl">Connect</a>
-                                <a v-else :href="'altv://connect/' + server.host + ':' + server.port">Connect</a>
+                                <a v-if="server.useCdn" :href="'altv://connect/' + server.cdnUrl">进入服务器</a>
+                                <a v-else :href="'altv://connect/' + server.host + ':' + server.port">进入服务器</a>
                             </div>
                         </div>
                     </div>

@@ -4,25 +4,25 @@
 
         <div class="wrapper">
             <div class="title">
-                <h1>Servers list</h1>
+                <h1>服务器列表</h1>
                 <div class="filters">
                     <div class="filter">
-                        <label>Promoted on top
+                        <label>官网认证排序
                             <input v-model="filter.promoted" type="checkbox" id="promoted" checked>
                             <span class="checkmark"></span>
                         </label>
                     </div>
                     <div class="filter">
-                        <i>Hide</i>
-                        <label>Empty
+                        <i>隐藏=></i>
+                        <label>无人
                             <input v-model="filter.empty" type="checkbox" id="empty">
                             <span class="checkmark"></span>
                         </label>
-                        <label>Full
+                        <label>满人
                             <input v-model="filter.full" type="checkbox" id="full">
                             <span class="checkmark"></span>
                         </label>
-                        <label>Locked
+                        <label>上锁
                             <input v-model="filter.locked" type="checkbox" id="locked">
                             <span class="checkmark"></span>
                         </label>
@@ -30,30 +30,30 @@
                 </div>
                 <div class="search">
                     <i class="fa fa-search"></i>
-                    <input v-model="filter.name" type="text" @keyup.esc="clearInput" placeholder="Search" />
+                    <input v-model="filter.name" type="text" @keyup.esc="clearInput" placeholder="搜索" />
                 </div>
             </div>
             <div class="container">
                 <div class="stats">
                     <!-- <a class="stats" href="https://altstats.net/" target="_blank"> -->
                     <span class="players">
-                        Players online: <i>{{ servers.reduce((a, b) => a + (b.players || 0), 0) }}</i>
+                        在线玩家数: <i>{{ servers.reduce((a, b) => a + (b.players || 0), 0) }}</i>
                     </span>
                     <span class="servers">
-                        Servers online: <i>{{ servers.length }}</i>
+                        服务器数量: <i>{{ servers.length }}</i>
                     </span>
                 </div>
 
                 <table class="server">
                     <thead>
-                        <th class="orderable" @click="sortBy('name')">Server Name <i
+                        <th class="orderable" @click="sortBy('name')">服务器名称 <i
                                 v-if="this.filter.orderBy.column === 'name'" class="fa" :class="sortByClass"></i></th>
                         <th class="center">&nbsp;</th>
-                        <th @click="sortBy('players')" class="orderable center">Players <i
+                        <th @click="sortBy('players')" class="orderable center">在线数/最大数 <i
                                 v-if="this.filter.orderBy.column === 'players'" class="fa" :class="sortByClass"></i>
                         </th>
-                        <th class="center optional">Gamemode</th>
-                        <th class="center optional">Language</th>
+                        <th class="center optional">游戏模式</th>
+                        <th class="center optional">语言</th>
                         <th class="optional">&nbsp;</th>
                     </thead>
                     <tbody>
@@ -78,8 +78,8 @@
                                 <!-- <img :src="getFlagImage(server.language)" /> -->
                             </td>
                             <td class="center optional connect">
-                                <a v-if="server.useCdn" :href="'altv://connect/' + server.cdnUrl">Connect</a>
-                                <a v-else :href="'altv://connect/' + server.host + ':' + server.port">Connect</a>
+                                <a v-if="server.useCdn" :href="'altv://connect/' + server.cdnUrl">进入服务器</a>
+                                <a v-else :href="'altv://connect/' + server.host + ':' + server.port">进入服务器</a>
                             </td>
                         </tr>
                     </tbody>
