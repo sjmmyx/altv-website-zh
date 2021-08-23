@@ -1,28 +1,27 @@
-# alt:V Website
+# alt:V Website 汉化版
 
-## Project setup
+## 项目设置
 
 ```sh
 npm install -g @vue/cli
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### 运行开发环境
 
 ```sh
 npm run serve
 ```
 
-### Compiles and minifies for production
+### 部署生产环境
 
 ```sh
 npm run build
 ```
 
-### Deploying for Github
+### 为 Github 部署
 
-If any changes are made. You can redeploy by running the following locally.
-That or run the `deploy.sh` if you're on a Linux based machine.
+如果有任何改变。您可以通过在本地运行以下命令来重新部署。`deploy.sh`如果您使用的是基于 Linux 的机器，则运行该程序。
 
 ```sh
 npm run build
@@ -42,6 +41,6 @@ git push -f git@github.com:altmp/altv-hub-client.git master:gh-pages
 
 Don't forget to go into settings and set the domain to https://hub.altv.mp/
 
-### Customize configuration
+### 自定义配置
 
 See [Configuration Reference](https://cli.vuejs.org/config/).
