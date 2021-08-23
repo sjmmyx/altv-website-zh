@@ -9,13 +9,13 @@
                 </div>
             </div>
             <div :class="{ menu: true, active: isMenuActive }" id="menu">
-                <router-link to="/" v-on:click.native="closeMenuButton">home</router-link>
-                <router-link to="/servers" v-on:click.native="closeMenuButton">servers</router-link>
-                <router-link to="/downloads" v-on:click.native="closeMenuButton">downloads</router-link>
-		<router-link to="/providers" v-on:click.native="closeMenuButton">providers</router-link>
-                <a href="https://discord.altv.mp/">discord</a>
-                <a href="https://wiki.altv.mp/">wiki</a>
-                <a href="https://hub.altv.mp/">resources</a>
+                <router-link to="/" v-on:click.native="closeMenuButton">主页</router-link>
+                <router-link to="/servers" v-on:click.native="closeMenuButton">服务器列表</router-link>
+                <router-link to="/downloads" v-on:click.native="closeMenuButton">下载</router-link>
+		<router-link to="/providers" v-on:click.native="closeMenuButton">服务器商</router-link>
+                <a href="https://discord.altv.mp/">discord(官方)</a>
+                <a href="https://wiki.altv.mp/">wiki(官方)</a>
+                <a href="https://hub.altv.mp/">服务器资源</a>
                 <button id="closebutton" @click="closeMenuButton">&times;</button>
             </div>
             <div class="social">

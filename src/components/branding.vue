@@ -3,13 +3,13 @@
         <div class="intro">
             <img src="@/assets/v_logo.svg" alt="">
             <h1>
-                alt:V Multiplayer
-                <br> <span>Branding</span>
+                alt:V 多人游戏平台
+                <br> <span>品牌推广</span>
             </h1>
         </div>
         <div class="item fonts">
             <span class="title">
-                Fonts
+                字体
                 <span></span>
             </span>
             <div class="head">
@@ -20,22 +20,22 @@
             </div>
             <div class="samples">
                 <span class="regular">
-                    Regular
+                    常规
                 </span>
                 <span class="medium">
-                    Medium
+                    中
                 </span>
                 <span class="bold">
-                    Bold
+                    粗体
                 </span>
                 <span class="extrabold">
-                    ExtraBold
+                    加粗
                 </span>
             </div>
         </div>
         <div class="item colors">
             <span class="title">
-                Colors
+                颜色
                 <span></span>
             </span>
             <div class="wrapper">
@@ -95,7 +95,7 @@
                     <i class="fas fa-check-circle fa-fw"></i>
                     Correct:
                 </div>
-                <span>alt:V Multiplayer, in short alt:V by the altMP Team</span>
+                <span>alt:V Multiplayer, 简而言之 alt:V 由 altMP 团队提供</span>
             </div>
             <div class="name incorrect">
                 <div class="rate">

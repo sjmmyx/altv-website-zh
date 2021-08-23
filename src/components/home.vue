@@ -2,27 +2,29 @@
     <div class="main">
         <div class="wrapper">
             <div class="text">
-                <h1>alt:V Multiplayer</h1>
+                <h1>alt:V - GTA:V联机平台</h1>
                 <p>
-                    A free alternative multiplayer client for GTA:V.
-                    <br />Our client provides perfect synchronization on custom dedicated servers.
-                    <br />Play with your friends and make your own gamemodes with JS, C# and much more.
+                    GTA:V 的免费替代多人游戏客户端（GTA5私服模式）.
+                    <br />单服务器最大支持（4000）名玩家同时在线.
+                    <br />支持使用 JS、C# 等编程语言免费创建自己的游戏服务器.
                 </p>
                 <router-link class="stats" to="/servers" v-on:click.native="closeMenuButton">
                 <!-- <a class="stats" href="https://altstats.net/" target="_blank"> -->
                     <span class="players">
-                        Players online: <i>{{ playerCount }}</i>
+                        在线玩家数: <i>{{ playerCount }}</i>
                     </span>
                     <span class="servers">
-                        Servers online: <i>{{ serverCount }}</i>
+                        服务器数量: <i>{{ serverCount }}</i>
                     </span>
                 </router-link>
                 <div class="sep"></div>
-                <router-link class="btn" to="/downloads">download client</router-link>
+                <router-link class="btn" to="/downloads">客户端下载</router-link>
                 <span class="launch">
-                    Before starting, unpack
-                    <i>altv.exe</i> to an empty folder.
-                    <br />Run as administrator.
+                    1.下载客户端文件<br />
+                    2.新建一个空文件夹(名字任意)<br />
+                    3.将下载后文件放入文件夹<br />
+                    4.以管理员身份运行.<i>altv.exe</i><br />
+                    5.等待客户端更新完成后即可进入游戏
                 </span>
             </div>
             <div class="vid">
@@ -33,11 +35,9 @@
         </div>
         <div class="copyright">
             <p>
-                Grand Theft Auto and Grand Theft Auto: V are registered trademarks of Take-Two Interactive Software.
-                <br />Any trademarks used belong to their respective owners. alt:V Multiplayer and altMP Project are not
-                affiliated with or endorsed by Take-Two Interactive Software.
-                <br />alt:V Multiplayer and altMP Project do not host any user-made servers and is not responsible for
-                user-made content. All user-made content are the property of their respective owners.
+                Grand Theft Auto 和 Grand Theft Auto: V 是 Take-Two Interactive Software 的注册商标.
+                <br />使用的任何商标均属于其各自所有者。 alt:V Multiplayer 和 altMP  不隶属于 Take-Two Interactive Software，也不受其认可.
+                <br />alt:V 在线联机平台 和 altMP Project 不托管任何用户制作的服务器，也不对用户制作的内容负责。 所有用户制作的内容均为其各自所有者的财产.
                 <br />
             </p>
         </div>

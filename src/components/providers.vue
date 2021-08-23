@@ -2,10 +2,10 @@
     <div class="main">
         <div class="wrapper">
             <div class="title">
-                <h1>verified hosting providers</h1>
+                <h1>经过验证的托管服务提供商</h1>
                 <p>
-		Using one of our verified alt:V hosting providers is the easiest way to host your own server 
-		<br />without the need of any server administration knowledge.
+		使用我们经过验证的 alt:V 托管服务提供商之一是托管您自己的服务器的最简单方法
+		<br />无需任何服务器管理知识.
                 </p>
             </div>
             <div class="container">

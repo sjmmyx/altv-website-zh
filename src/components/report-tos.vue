@@ -8,7 +8,7 @@
             marginheight="0"
             marginwidth="0"
             style="background: rgb(236, 240, 234); border-radius: 10px;"
-        >Loading…</iframe>
+        >载入中...</iframe>
     </div>
 </template>
 

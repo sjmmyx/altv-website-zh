@@ -2,34 +2,34 @@
     <div class="main">
         <div class="wrapper">
             <div class="title">
-                <h1>Downloads</h1>
+                <h1>下载 客户端/服务端</h1>
                 <p>
-                    By downloading you accept our<br />
-                    <a href="terms-of-service.pdf">Terms Of Service</a> and <a href="#">Privacy Policy</a>
+                    确认下载表示接受以下协议<br />
+                    <a href="terms-of-service.pdf">服务条款</a> 和 <a href="#">隐私政策y</a>
                 </p>
                 <p class="dlMobile">
-                    Downloads are unavailable on mobile devices, please visit this page from a desktop.
+                    无法在移动设备上下载，请从桌面访问此页面.
                 </p>
             </div>
             <div class="container">
                 <div class="dl client">
-                    <h2>Client</h2>
+                    <h2>客户端(玩家)</h2>
                     <p>
-                        Installer / Updater: <b>~2MB</b><br />
-                        Full client: <b>~170MB</b>
+                        安装程序 / 更新包: <b>~2MB</b><br />
+                        完整客户端: <b>~170MB</b>
                     </p>
                     <div class="action">
                         <a href="https://cdn.altv.mp/altv-release.zip" class="btn">
-                            Download
+                            下载
                         </a>
                         <a class="help" href="https://wiki.altv.mp/wiki/Tutorial:Troubleshoot_Client" target="_blank">
-                            Need help?
+                            需要帮助?
                         </a>
                     </div>
                 </div>
                 <!-- <div class="separator"></div> -->
                 <div class="dl server">
-                    <h2>Server</h2>
+                    <h2>服务端(开发者)</h2>
                     <div class="options">
                         <div class="os">
                             <label>
@@ -48,41 +48,41 @@
                         </div>
                         <div class="branch">
                             <select @change="updateServerVersion" v-model="options.branch" name="branch">
-                                <option value="release" selected>Release</option>
-                                <option value="rc">Release candidate</option>
-                                <option value="dev">Development</option>
+                                <option value="release" selected>正式版</option>
+                                <option value="rc">待发布版</option>
+                                <option value="dev">测试版</option>
                             </select>
                         </div>
                         <div class="addons">
                             <DownloadCheckbox name="data-files" v-model="options.include">
-                                Data files
+                                数据文件
                             </DownloadCheckbox>
 
                             <DownloadCheckbox name="js-module" v-model="options.include">
-                                JS Module
+                                JS 模块
                             </DownloadCheckbox>
 
                             <DownloadCheckbox name="csharp-module" v-model="options.include">
-                                C# Module
+                                C# 模块
                             </DownloadCheckbox>
 
                             <DownloadCheckbox name="sample-config" v-model="options.include">
-                                Sample config file
+                                示例配置文件
                             </DownloadCheckbox>
 
                             <DownloadCheckbox name="example-resources" v-model="options.include">
-                                Example resource pack
+                                演示资源
                             </DownloadCheckbox>
                         </div>
                     </div>
                     <a href="#" @click="tryBundleServe" :disabled="isBundling" class="btn">
                         <span v-if="!isBundling">
-                            Download <i>Build #{{ version }}</i>
+                            下载 <i>版本号 #{{ version }}</i>
                         </span>
                         <span v-else> {{ progress.toFixed(1) }}% </span>
                     </a>
                     <p class="dlMobile">
-                        Downloads are unavailable on mobile devices, please visit this page from a desktop.
+                        无法在移动设备上下载，请从桌面访问此页面.
                     </p>
                 </div>
             </div>
