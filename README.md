@@ -41,7 +41,7 @@ git commit -m 'deploy'
 git push -f git@github.com:altmp/altv-hub-client.git master:gh-pages
 ```
 
-Don't forget to go into settings and set the domain to https://hub.altv.mp/
+不要忘记进入设置并将域设置为 https://hub.altv.mp/
 
 ### 自定义配置
 
