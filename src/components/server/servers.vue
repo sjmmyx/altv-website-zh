@@ -66,9 +66,9 @@
                             </td>
                             <td class="center">
                                 <div class="icons">
-                                    <i v-if="server.verified" class="fa fa-check" title="Verified server"></i>
-                                    <i v-if="server.promoted" class="fa fa-bolt" title="Promoted server"></i>
-                                    <i v-if="server.locked" class="fa fa-lock" title="Locked server"></i>
+                                    <i v-if="server.verified" class="fa fa-check" title="官网验证"></i>
+                                    <i v-if="server.promoted" class="fa fa-bolt" title="升级服务器"></i>
+                                    <i v-if="server.locked" class="fa fa-lock" title="需要密码"></i>
                                 </div>
                             </td>
                             <td class="center players"><b>{{ server.players }}</b> <span class="optional">/

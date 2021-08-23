@@ -2,11 +2,16 @@
     <div class="main">
         <div class="wrapper">
             <div class="text">
-                <h1>alt:V - GTA:V联机平台</h1>
+                <h1>alt:V - GTA5多人联机平台</h1>
                 <p>
-                    GTA:V 的免费替代多人游戏客户端（GTA5私服模式）.
-                    <br />单服务器最大支持（4000）名玩家同时在线.
-                    <br />支持使用 JS、C# 等编程语言免费创建自己的游戏服务器.
+                    GTA5 的免费多人游戏客户端（GTA5私服模式）
+                    <br />[单服务器]最大支持（4000名）玩家同时在线
+                    <br />游戏模式多样化：角色扮演（RP）,战争模拟（DM），赛车，聚会，地盘争夺....
+                    <br />
+                    <br />-----------与 [fiveM] [RegeMp] 相比---------------
+                    <br />优点：(低延迟,最大玩家数,开发文档齐全,更新活跃...)
+                    <br />缺点：(中文服务器相对较少，持续开发中...)
+                    <br />服务器开发：支持使用 JS、C# 等编程语言免费创建
                 </p>
                 <router-link class="stats" to="/servers" v-on:click.native="closeMenuButton">
                 <!-- <a class="stats" href="https://altstats.net/" target="_blank"> -->
@@ -20,11 +25,13 @@
                 <div class="sep"></div>
                 <router-link class="btn" to="/downloads">客户端下载</router-link>
                 <span class="launch">
+                    =========安装教程===========<br />
                     1.下载客户端文件<br />
                     2.新建一个空文件夹(名字任意)<br />
                     3.将下载后文件放入文件夹<br />
-                    4.以管理员身份运行.<i>altv.exe</i><br />
-                    5.等待客户端更新完成后即可进入游戏
+                    4.右键 > <i>altv.exe > </i>以管理员身份运行.<br />
+                    5.等待客户端自动更新完成 > 进入游戏<br />
+                    6.选择服务器 > 即可进入游戏
                 </span>
             </div>
             <div class="vid">

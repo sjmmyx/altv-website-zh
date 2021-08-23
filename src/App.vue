@@ -15,7 +15,7 @@
 		<router-link to="/providers" v-on:click.native="closeMenuButton">服务器商</router-link>
                 <a href="https://discord.altv.mp/">discord(官方)</a>
                 <a href="https://wiki.altv.mp/">wiki(官方)</a>
-                <a href="https://hub.altv.mp/">服务器资源</a>
+                <a href="https://hub.altv.mp/">服务器开发资源</a>
                 <button id="closebutton" @click="closeMenuButton">&times;</button>
             </div>
             <div class="social">

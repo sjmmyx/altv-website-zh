@@ -22,7 +22,7 @@
                                     <table style="width: 100%;">
                                         <tbody>
                                             <tr>
-                                                <td>玩家数</td>
+                                                <td>人数</td>
                                                 <td><b>{{ server.players }}</b> / {{ server.maxPlayers }}</td>
                                             </tr>
                                             <tr>
@@ -38,7 +38,7 @@
                                                 <td>{{ server.port }}</td>
                                             </tr>
                                             <tr v-if="server.useCdn">
-                                                <td>CND域名</td>
+                                                <td>CND</td>
                                                 <td>{{ server.cdnUrl }}</td>
                                             </tr>
                                             <tr>
